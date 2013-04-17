@@ -17,7 +17,14 @@ grep -BN "String"  FileName
 grep -CN "String"  FileName
 
 
-grep -B1 ":" test.txt       afficher la ligne au dessus et au dessous de la chaine de   		           caractère recherche
-grep -b ":" test.txt      + affiche à le nombre caractère avant le texte 
-grep -n ":" test.txt		+ affiche le numéro de la ligne 
-grec -r  "Une chaine de caractère" NomDossier recherche dans ce dossier et tout les dossierls
+# show the lines which contain the searched string in a file,
+# and the number of characters
+grep -b "String"  FileName 
+
+# show the lines which contain the searched string in a file,
+# and the line number
+grep -n  "String"  FileName		
+
+
+# show the lines which contain the searched string in a Folder and sub Folder
+grec -r  "String" FolderName 

@@ -1,11 +1,25 @@
-emacs ==> ouvre editeur de text
-emacs "nom_fichier" ==> ouvre un  fichier
-emacs --files "nom_fichier" ==> "
-emacs --T "nom" ==> donne un nom au titre de la fenetre
+#!bin/sh
 
+emacs
+# open the text editor
+emacs test.txt
+# open the file test with the text editor
+emacs --files test.txt
+# open the file test with the text editor 
 
+emacs --T "nom" 
+# give a name to the text editor window
 
-//nano
-nano "nom_fichier" => ouvre un fichier
-nano -m "nom_fichier" => active la souris dans l'éditeur de texte
-nano -t "nom_fichier" => Sauvegarde le fichier automatiquement
+nano
+
+nano test.txt
+# open the file test with the text editor nano
+nano -m test.txt
+#enable the mouse in the text editor
+nano -t test.txt
+# Save the file automatically
+nano -T 5 test.txt 
+#change the tabulation
+nano -B test.txt
+# create a copy to save
+

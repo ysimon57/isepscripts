@@ -6,9 +6,10 @@ touch new.txt    # to update the access and modification time to the current tim
 stat new.txt
 touch -t 201304171415 new.txt # to set a certain time instead of the current time
 ls -l new.txt    # to show the time record
-touch -r a.txt new.txt # use this file's time instead of the current time, same as the command --file
+touch a.txt  # create a new file a.txt
+touch -r a.txt new.txt # change the last time modification of new.txt with the a.txt file's, same as the command --file
 ls -l new.txt
-touch -d '2013-04-17 15:11:11' new.txt # to set the date time, same as the command --date
+touch -d '2013-04-17 15:11:11' new.txt # to set the date time, you must choose a posterior date, same as the command --date
 ls -l new.txt
 touch -c new1.txt # if the file does not exist, no create
 touch -a new.txt # change only the access time

@@ -1,0 +1,11 @@
+emacs ==> ouvre editeur de text
+emacs "nom_fichier" ==> ouvre un  fichier
+emacs --files "nom_fichier" ==> "
+emacs --T "nom" ==> donne un nom au titre de la fenetre
+
+
+
+//nano
+nano "nom_fichier" => ouvre un fichier
+nano -m "nom_fichier" => active la souris dans l'éditeur de texte
+nano -t "nom_fichier" => Sauvegarde le fichier automatiquement

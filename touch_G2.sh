@@ -22,6 +22,6 @@ stat new.txt
 if ls|grep a.txt; then
  touch a-1.txt
 else
- touch a.txt
+ touch t.txt
 fi
  

@@ -21,3 +21,7 @@ find . -type f -name '*.pdf' -print0 | xargs -0 chown someuser:somegroup
 # xargs treat each input
 # print0 escaped newlines
 # we are looking for all types and pdf files we change the owner someuser to somegroup
+
+for i in `ls *jpg`;
+do chown caroline $i.png
+done

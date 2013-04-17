@@ -16,7 +16,6 @@ grep -BN "String"  FileName
 # the N previous lines and the N next lines
 grep -CN "String"  FileName
 
-
 # show the lines which contain the searched string in a file,
 # and the number of characters
 grep -b "String"  FileName 
@@ -25,6 +24,21 @@ grep -b "String"  FileName
 # and the line number
 grep -n  "String"  FileName		
 
-
 # show the lines which contain the searched string in a Folder and sub Folder
 grec -r  "String" FolderName 
+
+# show the lines which contain the searched string in a File ignoring Upper and lower case
+grec -i  "String" FileName
+
+# show the lines which contain the searched string in a file,
+# and the number of characters
+grep -b "String"  FileName
+
+# We can also use regular expressions 
+# . any characters
+# ^ beginning of the line 
+# $ end of the line
+# []  one of the characters between the [  ]
+# | or
+grep -E "String" FileName
+

@@ -6,7 +6,7 @@ path=$1
 filename=$2
 file=`find $path -name '$2'`
 if [ -f $file ]; then
-nombre_ligne=`wc -l $file` 
+nombre_ligne=`wc -l $2` 
 echo "File $2 has $nombre_ligne lines!"
 else
 echo "can't find File!"

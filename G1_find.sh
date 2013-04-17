@@ -1,5 +1,5 @@
 #!/bin/bash
-#Afficher le nombre des lignes d'un fichier
+#print the number of lines in a file 
 echo "Two arguments are required,one is for path,another is for a filename";
 if [ $# = 2 ];then
 path=$1 

@@ -42,4 +42,6 @@ grep -E .ello FileName
 grep -E $hello FileName
 grep -E [Hh]ello FileName
 
+#search the string "ORA-" in all log files
+find . -name "*.log" -exec grep -Hn "ORA-" {} \;
 

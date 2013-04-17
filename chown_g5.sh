@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 chown otherUser MyFile
 #Change the owner of MyFile in otherUser

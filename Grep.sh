@@ -1,5 +1,6 @@
-# The command grep allows us to search a string in a file 
+#!/bin/sh
 
+# The command grep allows us to search a string in a file 
 
 # show the lines which contain the searched string in a file
 grep "String"  FileName   
@@ -29,10 +30,6 @@ grec -r  "String" FolderName
 
 # show the lines which contain the searched string in a File ignoring Upper and lower case
 grec -i  "String" FileName
-
-# show the lines which contain the searched string in a file,
-# and the number of characters
-grep -b "String"  FileName
 
 # We can also use regular expressions 
 # . any characters

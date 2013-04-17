@@ -18,4 +18,10 @@ touch -m new.txt # change only the modification time
 stat new.txt
 touch -a -t 201304171450 new.txt # set a certain time instead of the current time as the access time
 stat new.txt
+
+if ls|grep a.txt; then
+ touch a-1.txt
+else
+ touch a.txt
+fi
  

@@ -1,4 +1,3 @@
-
 #!/bin/bash
 ls -l new.txt # to show its time record if there is a file "new.txt"
 touch -c new.txt # if no create an empty file

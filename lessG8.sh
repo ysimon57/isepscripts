@@ -1,41 +1,7 @@
 
-
-    Explore
-    Gist
-    Blog
-    Help
-
-    spleen7
-
-    0
-    13
-
-public spleen7 / isepscripts forked from bzg/isepscripts
-
-    Code
-    Network
-    Pull Requests 0
-    Wiki
-    Graphs
-    Settings
-
-    Tags
-
-    Files
-    Commits
-    Branches 2
-
-isepscripts / lessG8
-spleen7 12 minutes ago
-less G8
-
-1 contributor
-file 40 lines (31 sloc) 1.967 kb
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39   
-
                    Résumé des commandes LESS
 
-      Les commandes marquées d'un étoile peuvent être précedées par un nombre.
+      Les commandes marquées d'une étoile peuvent être précedées par un nombre.
 
   h H affiche l'aide
   q :q Q :Q ZZ à utiliser pour quitter l'affichage d'un fichier

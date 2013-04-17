@@ -40,5 +40,9 @@ grep -b "String"  FileName
 # $ end of the line
 # []  one of the characters between the [  ]
 # | or
-grep -E "String" FileName
+grep -E ^string FileName
+grep -E .ello FileName
+grep -E $hello FileName
+grep -E [Hh]ello FileName
+
 

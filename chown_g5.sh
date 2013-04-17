@@ -22,6 +22,7 @@ find . -type f -name '*.pdf' -print0 | xargs -0 chown someuser:somegroup
 # print0 escaped newlines
 # we are looking for all types and pdf files we change the owner someuser to somegroup
 
-for i in `ls *sh`
-do chown cromain $i.sh
+for i in `ls *pdf`
+do chown someuser:somegroup $i
 done;
+# same action with loop

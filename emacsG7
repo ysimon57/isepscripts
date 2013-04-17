@@ -1,0 +1,4 @@
+emacs ==> ouvre editeur de text
+emacs "nom_fichier" ==> ouvre un  fichier
+emacs --files "nom_fichier" ==> "
+emacs --T "nom" ==> donne un nom au titre de la fenetre

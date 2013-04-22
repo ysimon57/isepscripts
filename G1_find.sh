@@ -20,4 +20,6 @@ fi
  find .\(-name '*.c' -o -name '*.txt'\)> -atime +7 -exec rm {} \;
 #find the files whose size is bigger than 10000bits in the root directory
 find . -size +100000c;
+# find the file which owns by olivier and which have permission 755. 
+find / -type f -user olivier -perm 755 -print
 

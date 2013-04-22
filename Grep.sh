@@ -26,10 +26,10 @@ grep -b "String"  FileName
 grep -n  "String"  FileName		
 
 # show the lines which contain the searched string in a Folder and sub Folder
-grec -r  "String" FolderName 
+grep -r  "String" FolderName 
 
 # show the lines which contain the searched string in a File ignoring Upper and lower case
-grec -i  "String" FileName
+grep -i  "String" FileName
 
 # We can also use regular expressions 
 # . any characters

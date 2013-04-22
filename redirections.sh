@@ -28,3 +28,6 @@ echo "There are now $nblines lines in the file test.txt"
 
 nblineserr=`wc -l err.txt`
 echo "There are now $nblineserr lines in the file err.txt"
+
+#Replace a String
+sed -i -e "s/This/That/g" test.txt 

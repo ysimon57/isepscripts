@@ -45,6 +45,6 @@ grep -E [Hh]ello FileName
 #search the string "ORA-" in all log files
 find . -name "*.log" -exec grep -Hn "ORA-" {} \;
 
-cat essai1 | grep -v "^$" >essai2 
+cat essai1 | grep  ".*" >essai2 
 #all text write in essai1 is writing in essai2
 

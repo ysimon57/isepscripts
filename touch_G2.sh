@@ -1,5 +1,9 @@
 #!/bin/bash
-ls -l new.txt    # to show its time record if there is a file "new.txt"
+
+if [ `ls -l new.txt | wc -l` -eq 0]; then
+  touch new.txt    # if no create an empty file
+fi
+
 touch new.txt    # if no create an empty file
 ls -l new.txt    # to show the file time record
 touch new.txt    # to update the access and modification time to the current time

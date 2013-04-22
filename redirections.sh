@@ -22,4 +22,9 @@ echo "This is a line of text." 2> err.txt
 echo "This is a line of text." > err.txt 2>&1
 echo "This is a line of text." &> err.txt
 
+#Count the number of lines in the file
+nblines=`wc -l test.txt`
+echo "There are now $nblines lines in the file test.txt"
 
+nblineserr=`wc -l err.txt`
+echo "There are now $nblineserr lines in the file err.txt"

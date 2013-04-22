@@ -22,4 +22,6 @@ nano -T 5 test.txt
 #change the tabulation
 nano -B test.txt
 # create a copy to save
+nano test1.txt test2.txt
+# Open 2 files
 

@@ -24,4 +24,11 @@ if ls|grep a.txt; then
 else
  touch t.txt
 fi
+
+if [ -e a.txt ]
+  echo "File a.txt exists"
+else
+  touch a.txt;
+  echo "File a.txt created"
+fi
  

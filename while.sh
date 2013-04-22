@@ -8,7 +8,12 @@ do
   let i++
 
   # this is the text to be spoken
-  text="$i sheeps"
+  if [$i -eq 1]; then
+    text="$i sheep"
+  else
+    text="$i sheeps"
+  fi
+
 
   # Print the text
   echo "$text"

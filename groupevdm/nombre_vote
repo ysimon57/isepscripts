@@ -8,7 +8,7 @@ do
 
 grep '>je valide, c' $i | while read line;
 do
-tmp=${line##?*est une VDM</a> (<span class=}; # j'extrais le nombre de "Je valide, c'est une VDM" en indiquant ce qui est écrit après dans le code source
+tmp=${line##?*est une VDM</a> (<span class=}; # j'extrais le nombre de "Je valide, c'est une VDM" en indiquant ce qui est écrit avant dans le code source
 url=${tmp%%\</span>?*}; #J'indique ce qui se trouve dans le code source après l'information que je souhaite récupérer
 tmp2=${url##?*>};
 echo $tmp2 

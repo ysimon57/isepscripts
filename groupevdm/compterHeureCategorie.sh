@@ -2,7 +2,10 @@
 # trie les heures dans un troisième fichier pour compte le nombre d'occurence dans un quatrième. Les fichiers intermédiaires
 # sont supprimés ne reste que le dernier
 
- /!\ Ce fichier est à placer dans le même répertoire que le dossier www.viedemerde.fr
+# /!\ Ce fichier est à placer dans le même répertoire que le dossier www.viedemerde.fr
+# ensuite exécutez le dans le dossier de la catégorie choisi, exemple www.viedemerde.fr/amour/
+# puis ajouter la commande suivante > sh ../../compterHeureCategorie.sh
+
 
 #!/bin/bash
 dossier=`echo ${PWD##*/}`; # on garde en mémoire le nom du dossier

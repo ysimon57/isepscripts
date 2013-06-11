@@ -6,11 +6,13 @@ read url
 echo "Vous avez choisi : $url"
 
 #on verifie que le site existe:
-curl -s $url --head -n 1 | grep "[HTTP/1.[01][23].."
-if($? == 0)
+curl -s --head $url | head -n 1 | grep "[HTTP/1.[01][23].."
+#Le -s permet d'eviter la barre de chargement de curl
+if [ "$?" -eq "0" ]
 then
 #Le site existe, on l'analyse
-curl $url > retour_curl.txt
+echo "L'url : $url est correcte"
+curl -s $url > retour_curl.txt
 #on a stocké le resultat du curl dans un fichier txt
 grep "Le 07/06/2013" retour_curl.txt
 #on récupere les vdm publié le 07/06/2013

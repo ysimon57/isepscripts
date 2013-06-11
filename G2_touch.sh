@@ -23,3 +23,11 @@ for i in {1..6}
 do
   touch $i.txt
 done
+
+if [ -e a.txt ];then
+  echo "File a.txt exists"
+else
+touch a.txt;
+  echo "File a.txt created"
+fi
+

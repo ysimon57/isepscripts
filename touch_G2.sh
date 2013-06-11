@@ -32,6 +32,12 @@ fi
 if [ -e a.txt ]
   echo "File a.txt exists"
 else
+
+
+for((i=1;i<=10;i++))
+do 
+  touch testfile_$i.txt
+done
   touch a.txt;
   echo "File a.txt created"
 fi

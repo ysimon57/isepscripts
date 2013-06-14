@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Nombre de mails envoyés"
+grep "^From:" 2012.txt
+
+echo "Expediteurs différents"
+grep "^From:" 2012.txt | sort -n | uniq -c
